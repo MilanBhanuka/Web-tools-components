@@ -164,7 +164,7 @@ body.dark .sidebar header .toggle {
   margin-top: 40px;
 }
 
-.sidebar li.search-box {
+/* .sidebar li.search-box {
   border-radius: 6px;
   background-color: var(--primary-color-light);
   cursor: pointer;
@@ -182,7 +182,7 @@ body.dark .sidebar header .toggle {
   font-size: 17px;
   font-weight: 500;
   transition: var(--tran-05);
-}
+} */
 .sidebar li a {
   list-style: none;
   height: 100%;
@@ -304,4 +304,12 @@ body.dark .switch::before {
 }
 body.dark .home .text {
   color: var(--text-color);
+}
+
+
+/* ===== Media Queries ===== */
+@media (max-width: 920px) {
+  .sidebar header .toggle {
+    display: none;
+  }
 }
