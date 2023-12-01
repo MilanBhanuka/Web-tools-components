@@ -10,7 +10,7 @@
 </head>
 <body>
       <div id="wrapper">          
-            <div id="payment">
+            <div class="payment" id="payment">
                   <h2>Payment Details</h2>
 
                   <form id="checkout"> 
@@ -83,9 +83,17 @@
                         <label id="cvc-label">CVV</label>
                         <input id="cvc" type="text" placeholder="CVV" maxlength="3" />
             
-                        <button class="btn" type="submit" name="pay" >Pay</button>
+                        <button class="btn" type="submit" name="pay" onclick="openPopup()">Pay</button>
                   </form>          
             </div>
+
+            <div class="popup" id="popup">
+                  <img src="./tick.png">
+                  <h2>Payment successfully!</h2>
+                  <p>Your payment has been successfully submitted.</p>
+                  <button type="button" onclick="closePopup()">OK</button> 
+            </div>
       </div>
+      <script src="./script.js"></script>
 </body>
 </html>
