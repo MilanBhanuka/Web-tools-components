@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="./style.css" rel="stylesheet">
+       <!--Font Awesome CDN-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <div id="wrapper">          
+            <div id="payment">
+                  <h2>Payment Details</h2>
+
+                  <form id="checkout"> 
+                        <label>Select Payment Option</label>
+                        <input type="radio" name="payment" id="visa">
+                        <input type="radio" name="payment" id="mastercard">
+                        <input type="radio" name="payment" id="paypal">
+                        <input type="radio" name="payment" id="AMEX">
+      
+                        <div class="category">
+                              <label for="visa" class="visaMethod">
+                                    <div class="imgName">
+                                          <div class="imgContainer visa">
+                                                <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                                          </div>      
+                                    </div>
+                                    <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                              </label>
+                  
+                              <label for="mastercard" class="mastercardMethod">
+                                    <div class="imgName">
+                                          <div class="imgContainer mastercard">
+                                                <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                                          </div>   
+                                    </div>
+                                    <span class="check"><i class="fa-solid fa-circle-check"></i></span>
+                              </label>                    
+                        </div>
+                        
+          
+                        <label>Credit Card Number</label>
+                        <input id="cardnumber" type=text pattern="[0-9]{13,16}" name="cardnumber" requierd="true" placeholder="0123-4567-8901-2345" maxlength="12">
+            
+                        <label>Cardholder Name</label>
+                        <input id="cardholder" type="text" name="name" requierd="true" maxlength="50" placeholder="Cardholder Name">
+            
+                        <label>Expiration Date</label>
+                        <div id="left">
+                              <select name="month" id="month" onchange="" size="1">
+                                    <option value="00">MM</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                              </select>
+                              <p>/</p>
+                              <select name="year" id="year" onchange="" size="1">
+                                    <option value="00">YY</option>
+                                    <option value="01">23</option>
+                                    <option value="02">24</option>
+                                    <option value="03">25</option>
+                                    <option value="04">26</option>
+                                    <option value="05">27</option>
+                                    <option value="06">28</option>
+                                    <option value="07">29</option>
+                                    <option value="08">30</option>
+                                    <option value="09">31</option>
+                                    <option value="10">32</option>
+                              </select>
+                        </div>
+            
+                        <label id="cvc-label">CVV</label>
+                        <input id="cvc" type="text" placeholder="CVV" maxlength="3" />
+            
+                        <button class="btn" type="submit" name="pay" >Pay</button>
+                  </form>          
+            </div>
+      </div>
+</body>
+</html>
