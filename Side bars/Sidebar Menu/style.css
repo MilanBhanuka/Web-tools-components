@@ -32,14 +32,14 @@ body {
   color: #fff;
 }
 
-body.dark {
+/* body.dark {
   --body-color: #18191a;
   --sidebar-color: #242526;
   --primary-color: #3a3b3c;
   --primary-color-light: #3a3b3c;
   --toggle-color: #fff;
   --text-color: #ccc;
-}
+} */
 
 /* ===== Sidebar ===== */
 .sidebar {
@@ -53,6 +53,7 @@ body.dark {
   transition: var(--tran-05);
   z-index: 100;
 }
+
 .sidebar.close {
   width: 88px;
 }
@@ -152,9 +153,9 @@ header .image-text .profession {
   transition: var(--tran-05);
 }
 
-body.dark .sidebar header .toggle {
+/* body.dark .sidebar header .toggle {
   color: var(--text-color);
-}
+} */
 
 .sidebar.close .toggle {
   transform: translateY(-50%) rotate(0deg);
@@ -216,10 +217,13 @@ body.dark .sidebar header .toggle {
   display: none;
 }
 
+
+
 .home {
   position: absolute;
   top: 0;
   top: 0;
+  margin-left: 15px;
   left: 250px;
   height: 100vh;
   width: calc(100% - 250px);
@@ -234,10 +238,14 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar.close ~ .home {
-  left: 78px;
+  left: 80px;
   height: 100vh;
-  width: calc(100% - 78px);
+  width: calc(100% - 80px);
 }
+
+
+
+
 
 
 
@@ -249,6 +257,8 @@ body.dark .sidebar header .toggle {
     display: none;
   }
 }
+
+
 
 
 
