@@ -25,6 +25,26 @@
       font-weight: 500;
 }
 
+.popupcontainer{
+      background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.open-popupcontainer{
+      opacity: 1;
+      pointer-events: auto;
+}
+
 .popup{
       width: 400px;
       background: #fff;
